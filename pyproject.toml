@@ -1,0 +1,18 @@
+[project]
+name = "youtube-reports"
+version = "0.1.0"
+requires-python = ">=3.11"
+authors = [{ name = "Balyko Vlad", email = "balyko.vlad1@mail.ru" }]
+dependencies = ["tabulate"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "ruff"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=. --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
