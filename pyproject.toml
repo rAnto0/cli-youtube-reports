@@ -9,6 +9,8 @@ dependencies = ["tabulate"]
 dev = ["pytest", "pytest-cov", "ruff"]
 
 [tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
 addopts = "--cov=. --cov-report=term-missing"
 
 [tool.ruff]
