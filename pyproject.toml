@@ -13,6 +13,9 @@ pythonpath = ["."]
 testpaths = ["tests"]
 addopts = "--cov=. --cov-report=term-missing"
 
+[tool.coverage.run]
+omit = ["*/__init__.py", "tests/*"]
+
 [tool.ruff]
 line-length = 88
 
